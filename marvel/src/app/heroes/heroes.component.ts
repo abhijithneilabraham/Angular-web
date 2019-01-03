@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
+import { Component } from '@angular/core';
+
+export class Hero {
+    id: number;
+    name: string;
+}
 
 @Component({
-  selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+    selector: 'my-app',
+    template: '<h1>{{title}}</h1><h2>{{hero.name}} details!</h2>'
 })
-export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Tony Stark'
-  };
+export class AppComponent {
+    hero: Hero = {
+        id: 1,
+        name: 'Windstorm'
+    };
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    title = 'Tour of Heroes';
 }
