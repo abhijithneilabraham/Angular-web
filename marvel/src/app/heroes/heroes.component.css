@@ -1,6 +1,6 @@
 /* HeroesComponent's private CSS styles */
 .selected {
-  background-color: #CFD8DC !important;
+  background-color: blue!important;
   color: white;
 }
 .heroes {
@@ -13,7 +13,7 @@
   cursor: pointer;
   position: relative;
   left: 0;
-  background-color: #EEE;
+  background-color: green;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
@@ -45,4 +45,7 @@
   height: 1.8em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+div{
+  background-color: red
 }
